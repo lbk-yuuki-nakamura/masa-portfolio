@@ -91,6 +91,7 @@
 
 .pswp__zoom-wrap {
   text-align: center;
+  transform: none !important;
 }
 
 /* Prevent selection and tap highlights */
@@ -152,6 +153,8 @@
   max-width: 100% !important;
   max-height: 90% !important;
   display: inline !important;
+  position: absolute;
+  margin: auto;
 }
 
 /*
