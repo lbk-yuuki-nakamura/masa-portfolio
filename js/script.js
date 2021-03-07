@@ -3,6 +3,23 @@ initPhotoSwipeFromDOM('.js-my-gallery');
 
 $(function () {
 
+  var counter = 0;
+  topImageChange();
+
+  function topImageChange() {
+    setTimeout(function(){
+      if (counter == 0) {
+        counter = 1;
+        $('#ogpimg').attr('src', 'img/ogp2.jpg');
+        topImageChange();
+      } else {
+        counter = 0;
+        $('#ogpimg').attr('src', 'img/ogp.jpg');
+        topImageChange();
+      }
+    },7000);
+  }
+
   //photosのリンクを有効化
   //スライド（Swiper）内に記載のリンクを有効にするため下記の記述が必要 (;´･ω･)ｳｰﾝ･･･
   $(".photos-url").on("click", "a", function (e) {
