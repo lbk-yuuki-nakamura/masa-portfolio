@@ -99,7 +99,7 @@ li {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 540px;
+  /* height: 540px; */
 }
 
 .logo-name {
@@ -466,7 +466,7 @@ li {
 
   /* ヘッダー */
   .header {
-    height: 70vh;
+    /* height: 70vh; */
   }
 
   .logo-name {
@@ -594,5 +594,16 @@ li {
   /* フッター */
   .footer .inner {
     padding: 20px 0;
+  }
+}
+
+.ogp-image {
+  width: 100%;
+}
+
+@media screen and (max-width: 800px) {
+  .ogp-image {
+    max-width: 1000px;
+    width: 1000px;
   }
 }
