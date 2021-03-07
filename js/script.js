@@ -10,11 +10,15 @@ $(function () {
     setTimeout(function(){
       if (counter == 0) {
         counter = 1;
-        $('#ogpimg').attr('src', 'img/ogp2.jpg');
+        $('#ogpimg').attr('src', 'img/top/ogp2.jpg');
+        topImageChange();
+      } else if (counter == 1) {
+        counter = 2;
+        $('#ogpimg').attr('src', 'img/top/ogp3.jpg');
         topImageChange();
       } else {
         counter = 0;
-        $('#ogpimg').attr('src', 'img/ogp.jpg');
+        $('#ogpimg').attr('src', 'img/top/ogp.jpg');
         topImageChange();
       }
     },7000);
